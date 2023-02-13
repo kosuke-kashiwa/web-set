@@ -1,0 +1,6 @@
+@use "../setting/setting" as *;
+
+p {
+    @include liquid-p;
+    @include p-1;
+}

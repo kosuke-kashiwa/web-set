@@ -1,0 +1,13 @@
+@use "../setting/setting" as *;
+
+.site-header-bland_heading {
+    display: flex;
+    @include liquid-p;
+    --ideal-font-size: 17;
+    align-items: center;
+    color: $color-black;
+    font-family: $noto-sans;
+    img {
+        max-width: 116px;
+    }
+}

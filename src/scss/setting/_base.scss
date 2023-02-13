@@ -1,0 +1,34 @@
+@media (min-width: 1921px) {
+  html {
+    font-size: 1vw;
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@mixin wrapper-padding {
+    
+}
+
+@mixin text-layout {
+    --ideal-viewport-width: 1440;
+    --current-viewport-width: 100vw;
+    --min-viewport-width: 350px;
+    --max-viewport-width: 3840px;
+}

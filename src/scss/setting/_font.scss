@@ -1,0 +1,79 @@
+@use "base" as *;
+$p-size: 20px;
+
+// <!-- googleフォント -->
+//<link rel="preconnect" href="https://fonts.googleapis.com">
+//<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+//<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+$noto-sans: 'Noto Sans JP', sans-serif;
+
+//<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+$robo-cond: 'Roboto Condensed', sans-serif;
+
+
+// リキッドテキストレイアウト
+@mixin liquid-h1 {
+    @include text-layout;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-h2 {
+    @include text-layout;
+    --ideal-font-size: 30;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-h3 {
+    @include text-layout;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-h4 {
+    --ideal-viewport-width: 1440;
+    --current-viewport-width: 100vw;
+    --min-viewport-width: 350px;
+    --max-viewport-width: 3840px;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-h5 {
+    @include text-layout;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-h6 {
+    @include text-layout;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-lead {
+    @include text-layout;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin liquid-p {
+    @include text-layout;
+    --ideal-font-size: 16;
+    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+    font-size: calc(var(--ideal-font-size) * (var(--clamped-viewport-width) / var(--ideal-viewport-width)));
+  }
+
+@mixin p-1 {
+    font-family: $noto-sans;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+  }
